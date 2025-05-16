@@ -11,3 +11,8 @@ jobs:
           node-version: "20"
       - run: npm install -g bats
       - run: bats -v
+  echo-helloworld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hello World"
